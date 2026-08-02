@@ -28,7 +28,7 @@ function cardHTML(p) {
     <div class="body">
       <div class="line-label">${p.line}</div>
       <h3>${p.name}</h3>
-      <div class="stats"><span><b>${p.cal}</b> cal</span><span><b>${p.protein}</b> protein</span><span><b>${p.sugar}</b> sugar</span></div>
+      <div class="stats"><span><b>${p.cal}</b> cal</span><span><b>${p.protein}</b></span><span><b>${p.sugar}</b> sugar</span></div>
       <div class="rating">★ ${p.rating} reviews</div>
       <div class="foot">
         <span class="price">${p.price}</span>
@@ -56,7 +56,7 @@ function nowCardHTML(p) {
   <div class="now-card">
     <div class="now-thumb">
       <button class="now-add" onclick="addToCart()" aria-label="Add ${p.name}">Add</button>
-      <span class="now-protein">${p.protein}<small>protein</small></span>
+      <span class="now-protein">${p.protein}<small>per unit</small></span>
       <img src="${p.img}" alt="${p.name}" loading="lazy" />
     </div>
     <div class="now-body">
